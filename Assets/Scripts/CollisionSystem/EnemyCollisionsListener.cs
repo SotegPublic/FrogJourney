@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Platformer.Player
 {
-    public class EnemyCollisionsListener : IPlayerCollisionEnterListener
+    public class EnemyCollisionsListener : ICollisionEnterListener
     {
         private PlayerController _playerController;
         private EnemiesController _enemiesController;

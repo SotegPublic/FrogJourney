@@ -9,8 +9,8 @@ namespace Platformer.Core
     {
         private IÑollisionableView _playerView;
 
-        private List<IPlayerCollisionEnterListener> _onEnterlisteners = new List<IPlayerCollisionEnterListener>(5);
-        private List<IPlayerCollisionExitListener> _onExitlisteners = new List<IPlayerCollisionExitListener>(5);
+        private List<ICollisionEnterListener> _onEnterlisteners = new List<ICollisionEnterListener>(5);
+        private List<ICollisionExitListener> _onExitlisteners = new List<ICollisionExitListener>(5);
 
         public PlayerCollisionObserver(IÑollisionableView ñollisionableView)
         {
@@ -36,27 +36,27 @@ namespace Platformer.Core
             }
         }
 
-        public void Subscribe(IPlayerCollisionListener listener)
+        public void Subscribe(ICollisionListener listener)
         {
-            if (listener is IPlayerCollisionEnterListener enterListener)
+            if (listener is ICollisionEnterListener enterListener)
             {
                 _onEnterlisteners.Add(enterListener);
             }
 
-            if (listener is IPlayerCollisionExitListener exitListener)
+            if (listener is ICollisionExitListener exitListener)
             {
                 _onExitlisteners.Add(exitListener);
             }
         }
 
-        public void Unsubscribe(IPlayerCollisionListener listener)
+        public void Unsubscribe(ICollisionListener listener)
         {
-            if (listener is IPlayerCollisionEnterListener enterListener)
+            if (listener is ICollisionEnterListener enterListener)
             {
                 _onEnterlisteners.Remove(enterListener);
             }
 
-            if (listener is IPlayerCollisionExitListener exitListener)
+            if (listener is ICollisionExitListener exitListener)
             {
                 _onExitlisteners.Remove(exitListener);
             }

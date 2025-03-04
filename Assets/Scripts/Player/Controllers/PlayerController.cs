@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Platformer.Player
 {
-    public class PlayerController : IFixedUpdateble, IUpdateble, IPlayerCollisionEnterListener, IPlayerCollisionExitListener
+    public class PlayerController : IFixedUpdateble, IUpdateble, ICollisionEnterListener, ICollisionExitListener
     {
         private PlayerFactory _factory;
         private PlayerModel _playerModel;
