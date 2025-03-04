@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372095d2b14184843992af88696b0c77, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  _playerSpeed: 7
+  _playerSpeedDecayModifier: 0.8
+  _playerJumpForce: 15
+  _playerSpeedOnJumpModifier: 0.8
+  _damageJumpForece: 7.5
+  _damageJumpDirection: {x: 0.7, y: 0.7}
+  _playerDashSpeed: 0.25
+  _playerDashFrameCount: 12
+  _playerDashCount: 1
+  _playerHealth: 3
+  _playerPrefab: {fileID: 6870908400030508397, guid: 49e4a7f28a95e5941890806dc53b04af, type: 3}
+  _groundDetectDelay: 0.04
